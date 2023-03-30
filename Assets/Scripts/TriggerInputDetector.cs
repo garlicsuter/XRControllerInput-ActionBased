@@ -35,6 +35,11 @@ public class TriggerInputDetector : MonoBehaviour
             Debug.Log("A button: " + Abutton);
         }
 
+        if (_inputData._rightController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool Bbutton))
+        {
+            Debug.Log("B button: " + Bbutton);
+        }
+
         //triggerValue = ((float)_inputData._leftController.characteristics);
         //Debug.Log("triggerValue is: " + triggerValue);
 
